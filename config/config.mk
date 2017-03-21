@@ -185,7 +185,7 @@ CMAKE_MAKE_TEST_ARGS?="ARGS=-j16"
 # If you disable this setting the build system will not check. (For example if you wanted to build
 # on Debian. See the related setting DISABLE_UBUNTU_PACKAGE_CHECK
 # NOTE: Any value is considered true!
-#DISABLE_UBUNTU_CHECK=True
+DISABLE_UBUNTU_CHECK=True
 
 # CCNX_HOME
 # These variables are used by scripts to know where to find the installed

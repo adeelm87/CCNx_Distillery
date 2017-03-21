@@ -131,7 +131,26 @@ DISTILLERY_MODULES_DIR=${DISTILLERY_CONFIG_DIR}/modules
 modules=
 modules_dir=
 
-include ${DISTILLERY_MODULES_DIR}/*.mk
+#include ${DISTILLERY_MODULES_DIR}/*.mk
+
+include config/modules/000-distillery-update.mk
+include config/modules/000-gitModule.mk
+include config/modules/001-modules.mk
+include config/modules/002-cmake-modules.mk
+include config/modules/002-make-modules.mk
+include config/modules/100-distillery.mk
+include config/modules/110-longbow.mk
+include config/modules/120-libparc.mk
+include config/modules/210-libccnx-common.mk
+include config/modules/220-libccnx-transport-rta.mk
+include config/modules/230-libccnx-portal.mk
+include config/modules/510-Metis.mk
+include config/modules/511-Athena.mk
+include config/modules/601-ccnxPing.mk
+include config/modules/602-ccnxSimpleFileTransfer.mk
+include config/modules/603-ccnxFileRepo.mk
+include config/modules/701-MasterIDE.mk
+include config/modules/900-sanity.mk
 
 # Load user defined modules
 DISTILLERY_USER_MODULES_DIR=${DISTILLERY_USER_CONFIG_DIR}/modules
